@@ -36,7 +36,7 @@ model = tf.keras.Sequential([
 ])
 
 # Load weights directly from .h5 file
-h5_path = "best_tomato_model.h5"
+h5_path = "models/best_tomato_model.h5"
 try:
     with h5py.File(h5_path, 'r') as f:
         if 'model_weights' in f:
